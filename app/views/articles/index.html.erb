@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dizaster Magazine Extreme Sports Magazine</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS interno, caso prefira em um arquivo separado, mova para styles.css */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background: url('https://example.com/capa.jpg') no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 5rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background-color: #000000;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    nav {
+      background-color: #000000;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff0000;
+    }
+
+    .main-content {
+      padding: 40px;
+      background-color: white;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .article {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .article img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .article h2 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+
+    .article p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dizaster Magazine</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="https://www.thrashermagazine.com/component/coversarchive/covers/">Articles</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-content">
+    <h2>Destaques da Semana</h2>
+    <div class="articles">
+      <div class="article">
+        <img src="https://example.com/skate.jpg" alt="Skateboarding">
+        <h2>Skateboarding: O Melhor das Pistas</h2>
+        <p>Descubra as melhores manobras e como se preparar para os maiores desafios nas pistas.</p>
+      </div>
+      <div class="article">
+        <img src="https://example.com/surf.jpg" alt="Surf">
+        <h2>Surf nas Ondas Gigantes</h2>
+        <p>Acompanhe os maiores eventos de surf pelo mundo, com dicas para melhorar seu desempenho nas ondas.</p>
+      </div>
+      <div class="article">
+        <img src="https://example.com/escalada.jpg" alt="Escalada">
+        <h2>Escalada: Aventura nas Montanhas</h2>
+        <p>Saiba tudo sobre os melhores spots para escalar e como se preparar para enfrentar desafios verticais.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Extreme Sports Magazine. All rights reserved. created by PH</p>
+  </footer>
+
+</body>
+</html>
+
