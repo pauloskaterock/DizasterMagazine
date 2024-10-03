@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+"# DizasterMagazine"  git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/pauloskaterock/DizasterMagazine.git git push -u origin main
