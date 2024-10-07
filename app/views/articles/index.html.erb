@@ -111,9 +111,11 @@
       margin: 0;
     }
   </style>
+  <!-- -------------------------------------------- -------- -->
 </head>
 <body>
-  
+ 
+
  <img src="demonSKT.jpg" width="70px" height="40px" alt="Demon"><br><br>
   <header>
     <h1>Dizaster Magazine</h1>
@@ -127,7 +129,17 @@
   <nav>
     <ul>
       <li><a href="#">Início</a></li>
-      <li><a href="https://www.thrashermagazine.com/component/coversarchive/covers/">Articles</a></li>
+<!---------------------------------------------->
+      <ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<!----------------------------------------------------->
       <li><a href="#">Sobre Nós</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
